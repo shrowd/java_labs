@@ -1,1 +1,1 @@
-# java_labs
+# algorithms in java
