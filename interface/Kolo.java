@@ -4,18 +4,16 @@ public class Kolo {
     public Kolo(int r) {
         this.r = r;
     }
-    public String toString(){
-        return "Kolo o promieniu: " + r;
-    }
+    @Override
     public double pole(){
         return Math.pow(r,2) * 3.14;
     }
+    @Override
     public double obwod(){
         return 2 * 3.14 * r;
     }
-    public static void main(String[] args){
-        Kolo k1 = new Kolo(3);
-        System.out.println(k1.obwod());
-        System.out.println(k1.pole());
+    @Override
+    public String toString(){
+        return "Kolo o promieniu: " + r;
     }
 }
