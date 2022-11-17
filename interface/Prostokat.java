@@ -4,9 +4,11 @@ public class Prostokat implements Figura {
         this.a = a;
         this.b = b;
     }
+    @Override
     public double pole(){
         return a*b;
     }
+    @Override
     public double obwod(){
         return 2*a + 2*b;
     }
